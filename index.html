@@ -5,19 +5,29 @@
     <meta charset="utf-8">
     <!-- Ensuring proper rendering and touch zooming on mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Bootstrap CDN-->
-    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
 
     <div class="row">
-     <div class="col-lg-4">First Last</div>
-     <div class="col-lg-8">Rolling Descriptions</div>
+     <div class="col-lg-6 text-center">
+       <h1>First Last</h1>
+     </div>
+     <div class="col-lg-6">
+       <h1>
+         <span
+         class="txt-rotate"
+         data-period="1500"
+         data-rotate='["Text1", "Text2", "Text3", "Text4", "Text5"]'>
+       </span>
+      </h1>
+     </div>
    </div>
 
   </body>
