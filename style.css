@@ -1,25 +1,28 @@
+* {
+  font-family: 'Roboto mono', sans-serif;
+}
+
 .row1 {
-  background-color: white;
-  color: black;
-  height: 100%;
-  padding-top: 250;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 100px;
+}
+
+.name {
+  margin-left: 150px;
 }
 
 .row2 {
-  padding-top: 200;
+  padding-top: 125px;
+  margin-left: 150px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-.btn1 {
-  height: 50px;
-  width: 100px;
-  background-color: black;
-  color: white;
-  border: 0px;
-  border-radius: 10px;
-  text-align: center;
-  vertical-align: middle;
-  margin: auto;
+.row3 {
+  padding-top: 175px;
+  font-size: 15px;
 }
+
+.row3 a:link {color:#333; text-decoration: none;}
+.row3 a:visited {color:#333; text-decoration: none;}
+.row3 a:hover {color:#333; text-decoration: none;}
+.row3 a:active {color:#333; text-decoration: none;}
