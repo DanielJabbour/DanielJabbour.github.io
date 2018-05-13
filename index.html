@@ -1,143 +1,34 @@
-<!DOCTYPE html>
-<html>
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <!-- Ensuring proper rendering and touch zooming on mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-<title>Daniel Jabbour</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 
-<!--Formating-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
 
-<!--Javascript for navbar-->
-<script type="text/javascript" src="script.js"></script>
+    <div class="row">
+     <div class="col-lg-6 text-center">
+       <h1>First Last</h1>
+     </div>
+     <div class="col-lg-6">
+       <h1>
+         <span
+         class="txt-rotate"
+         data-period="1500"
+         data-rotate='["Text1", "Text2", "Text3", "Text4", "Text5"]'>
+       </span>
+      </h1>
+     </div>
+   </div>
 
-<!--Stylesheet-->
-<link rel="stylesheet" href="style.css">
-
-<!--Fonts-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-<!-- Navbar-->
-<div class="top">
-  <div class="bar" id="navbar">
-    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="navbarToggle()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="bar-item button">HOME</a>
-    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="nav2" class="bar-block white hide hide-large hide-medium">
-    <a href="#about" class="bar-item button" onclick="navbarToggle()">ABOUT</a>
-    <a href="#portfolio" class="bar-item button" onclick="navbarToggle()">PORTFOLIO</a>
-    <a href="#contact" class="bar-item button" onclick="navbarToggle()">CONTACT</a>
-    <a href="#" class="bar-item button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="front_img display-container opacity-min" id="home">
-  <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large black xlarge wide animate-opacity">Hi, <span class="hide-small">I'm Daniel</span></span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="content container padding-64" id="about">
-  <h3 class="center">ABOUT ME</h3>
-  <p>Hi, my name is Daniel Jabbour and I'm currently a Computer Engineering student at McMaster University. I made this website so I can share with you some highlights of my life like my projects, interests, and so on. When I'm not studying for exams you can find me competing at hackathons, playing some basketball, or lounging on Netflix. Some of my interests include Artificial Intelligence, Data Science, and Robotics.</p>
-  
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="portfolio_img display-container opacity-min">
-  <div class="display-middle">
-    <span class="xxlarge text-white wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="content container padding-64" id="portfolio">
-  <h3 class="center">MY WORK</h3>
-  <p class="center">Here are some of the projects I've worked on.</p>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="row-padding center">
-    <div class="col m3">
-      <a href="https://github.com/DanielJabbour/ToneRecognition" target="_blank">
-      <img src="Images/tone_rec.png" style="width:100%" class="hover-opacity" alt="Tone Analyzer">
-    </a>
-    </div>
-
-    <div class="col m3">
-      <img src="IMAGE SOURCE" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coming Soon">
-    </div>
-
-    <div class="col m3">
-      <img src="IMAGE SOURCE" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coming Soon">
-    </div>
-
-    <div class="col m3">
-      <img src="IMAGE SOURCE" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coming Soon">
-    </div>
-  </div>
-
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="modal black" onclick="this.style.display='none'">
-  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="modal-content animate-zoom center transparent padding-64">
-    <img id="img01" class="image">
-    <p id="caption" class="opacity large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="contact_img display-container opacity-min">
-  <div class="display-middle">
-     <span class="xxlarge text-white wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="content container padding-64" id="contact">
-  <h3 class="center">Get in touch with me!</h3>
-  <p class="center"><em>I'd love to hear from you</em></p>
-  <div class="row padding-32 section">
-    <div class="col m4 container">
-    </div>
-    <div class="col m8 panel">
-      <div class="large margin-bottom">
-        <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Hamilton, ON<br>
-        <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: +1 (905) 379-8875<br>
-        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: jabbourd@mcmaster.ca<br>
-      </div>
-      <p>Meet me for a cup of <i class="fa fa-coffee"></i>, or leave me a message:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="row-padding" style="margin:0 -16px 8px -16px">
-          <div class="half">
-            <input class="input border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="half">
-            <input class="input border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="input border" type="text" placeholder="Message" required name="Message">
-        <button class="button black right section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
