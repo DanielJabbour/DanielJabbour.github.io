@@ -15,11 +15,11 @@
   margin-left: 150px;
   font-size: 18px;
   line-height: 30px;
-  margin-right:100px;
+  margin-right:80px;
 }
 
 .row3 {
-  padding-top: 12.5%;
+  padding-top: 200px;
   font-size: 15px;
   margin-right: 200px;
 }
@@ -29,11 +29,6 @@
 .row3 a:hover {color:#333; text-decoration: none;}
 .row3 a:active {color:#333; text-decoration: none;}
 
-.portfolio-head {
-  font-family: 'Roboto mono', sans-serif;
-  padding-top: 100px;
-  margin-left: 150px;
-}
 
 .github {
     margin-bottom: 5px;

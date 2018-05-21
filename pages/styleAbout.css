@@ -1,0 +1,24 @@
+* {
+  font-family: 'Roboto mono', sans-serif;
+}
+
+.portfolio-head {
+  margin-left: 150px;
+  padding-top: 100px;
+}
+
+.rowTitles {
+  padding-top: 75px;
+  margin-left: 150px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-right:100px;
+}
+
+.portfolio {
+
+}
+
+.books {
+  display: block;
+}
