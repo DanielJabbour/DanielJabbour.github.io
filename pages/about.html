@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styleAbout.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="about.js"></script>
   </head>
 
   <body>
@@ -18,20 +20,20 @@
 
     <div class="rowTitles">
      <div class="col-sm-6">
-       <h4>Portfolio</h4>
+       <button onclick="toggleTab()" id="portfolioButton">Portfolio</button>
      </div>
 
      <div class="col-sm-6">
-       <button onclick="toggleClock()" id="bookButton">Show clock</button>
+       <button onclick="toggleTab()" id="bookButton">Books</button>
      </div>
    </div>
 
-   <div class="col-lg-12 portfolio">
-     <p> test1 </p>
+   <div class="col-lg-12" id="portfolio">
+     <p> portfolio Text </p>
    </div>
 
    <div class="col-lg-12" id="books">
-     <p> test2 </p>
+     <p> Books Text </p>
    </div>
 
   </body>

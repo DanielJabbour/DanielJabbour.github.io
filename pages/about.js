@@ -1,24 +1,19 @@
-function toggleClock() {
-  // get the clock
-  var myBooks = document.getElementById('books');
+function toggleTab() {
 
-  // get the current value of the clock's display property
-  var displaySetting = myBooks.style.display;
+  var myBooks = document.getElementById("books");
+  var myPortfolio = document.getElementById("portfolio");
 
-  // also get the clock button, so we can change what it says
-  var bookButton = document.getElementById('bookButton');
+  var displaySettingBooks = myBooks.style.display; //check??
+  var displaySettingPortfolio = myPortfolio.style.display;
 
-  // now toggle the clock and the button text, depending on current state
-  if (displaySetting == 'block') {
-    // clock is visible. hide it
-    myBooks.style.display = 'none';
-    // change button text
-    bookButton.innerHTML = 'Show clock';
+  if (displaySettingBooks == "none"){
+    myBooks.style.display = "block";
+    myPortfolio.style.display = "none";
   }
-  else {
-    // clock is hidden. show it
-    myBooks.style.display = 'block';
-    // change button text
-    bookButton.innerHTML = 'Hide clock';
+  
+  if (displaySettingPortfolio == "none") {
+    myPortfolio.style.display = "block";
+    myBooks.style.display = "none";
   }
+
 }

@@ -15,10 +15,10 @@
   margin-right:100px;
 }
 
-.portfolio {
-
+#portfolio {
+  display: block;
 }
 
-.books {
-  display: block;
+#books {
+  display: none;
 }
