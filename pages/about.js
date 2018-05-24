@@ -10,7 +10,7 @@ function toggleTab() {
     myBooks.style.display = "block";
     myPortfolio.style.display = "none";
   }
-  
+
   if (displaySettingPortfolio == "none") {
     myPortfolio.style.display = "block";
     myBooks.style.display = "none";
