@@ -1,19 +1,19 @@
-function toggleTab() {
-
-  var myBooks = document.getElementById("books");
-  var myPortfolio = document.getElementById("portfolio");
-
-  var displaySettingBooks = myBooks.style.display; //check??
-  var displaySettingPortfolio = myPortfolio.style.display;
-
-  if (displaySettingBooks == "none"){
-    myBooks.style.display = "block";
-    myPortfolio.style.display = "none";
+(function(){
+  function toggleSection()
+  {
+      if(location.hash=="#hashtrap")
+          document.getElementById("portfolioContent").style.display="block";
+      else
+          document.getElementById("portfolioContent").style.display="none";
   }
-
-  if (displaySettingPortfolio == "none") {
-    myPortfolio.style.display = "block";
-    myBooks.style.display = "none";
+  if(window.addEventListener)
+  {
+      window.addEventListener("hashchange",toggleSection,false);
+      window.addEventListener("load",toggleSection,false);
   }
-
-}
+  else
+  {
+      window.attachEvent("onhashchange",toggleSection);
+      window.attachEvent("onload",toggleSection);
+  }
+})();
