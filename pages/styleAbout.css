@@ -7,7 +7,12 @@
   padding-top: 100px;
 }
 
+.navbar {
+  padding-top: 10px;
+}
+
 .navbar p a {
-  color: black;
+  color: #333333;
   text-decoration: none;
+  cursor: pointer;
 }
